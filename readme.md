@@ -1,24 +1,4 @@
 # mobileperf
-# [US English]
-
-mobileperf is a Python PC tool  that can collect Android performance data: cpu,memory,fps,logcat log,traffic,process thread number,process launch log.mobileperf also support monkey test.
-
-## Features
-
- * Support most versions of Android OS from 5.0 to 10.0
- * No need root device,no need integrate SDK
- * Support Mac, linux, windows
- * Good stability, can run continuously for more than 72 hours
- * a little PC resource occupation, consume PC memory about 12M
-
-## Getting started
-
-- Python3，recommend python3.7
-- adb，ensure system path contains adb
-
-- edit config file in mobileperf root dir,example config.conf
-- run ,in mobileperf root dir，mac or linux execute sh run.sh ,windows double click run.bat,end test wait timeout or click ctrl+C
-
 # [简体中文]
 
 mobileperf is python PC 工具，可以收集Android性能数据: cpu 内存 流畅度fps logcat日志 流量 进程线程数 进程启动日志，mobileperf也支持原生monkey test
