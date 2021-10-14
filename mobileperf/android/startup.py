@@ -204,7 +204,7 @@ class StartUp(object):
             self.add_monitor(MemMonitor(self.serialnum, self.packages, self.frequency, self.timeout))
             self.add_monitor(TrafficMonitor(self.serialnum, self.packages, self.frequency, self.timeout))
             # 软件方式 获取电量不准，已用硬件方案测试功耗
-            # self.add_monitor(PowerMonitor(self.serialnum, self.frequency,self.timeout))
+            self.add_monitor(PowerMonitor(self.serialnum, self.frequency,self.timeout))
             self.add_monitor(FPSMonitor(self.serialnum,self.packages[0],self.frequency,self.timeout))
             # 6.0以下能采集到fd数据，7.0以上没权限
             if self.device.adb.get_sdk_version() <= 23:
