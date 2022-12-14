@@ -536,12 +536,12 @@ class FPSMonitor(Monitor):
 
 if __name__ == '__main__':
 #    tulanduo android8.0 api level 27
-    monitor  = FPSMonitor('TC79SSDMO7HEY5Z9',"com.alibaba.ailabs.genie.smartapp",1)
+    monitor  = FPSMonitor('FIKJMBGQ4SROZS7S',"com.kmxs.reader",1)
 #  mate 9 android8.0
 #     monitor  = FPSMonitor('MKJNW18226007860',"com.sankuai.meituan",2)
 # android8.0 Google Pixel 2
 #     monitor  = FPSMonitor('HT7B81A05143',package_name = "com.alibaba.ailibs.genie.contacts",1)
     monitor.start(TimeUtils.getCurrentTimeUnderline())
-    time.sleep(600)
+    time.sleep(60)
     monitor.stop()
 

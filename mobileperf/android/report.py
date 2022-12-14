@@ -14,7 +14,7 @@ from datetime import datetime
 from mobileperf.android.excel import Excel
 from mobileperf.common.log import logger
 from mobileperf.common.utils import TimeUtils
-
+print(TimeUtils.getCurrentTimeUnderline())
 class Report(object):
     def __init__(self, csv_dir, packages=[]):
         os.chdir(csv_dir)
@@ -68,9 +68,9 @@ class Report(object):
         #return [f for f in os.listdir(device) if os.path.isfile(os.path.join(device, f)) and os.path.basename(f) in self.summary_csf_file.keys()]
 
 if __name__ == '__main__':
-# 根据csv生成excel汇总文件
+    # 根据csv生成excel汇总文件
     from mobileperf.android.globaldata import RuntimeData
-    RuntimeData.packages = ["com.alibaba.ailabs.genie.smartapp","com.alibaba.ailabs.genie.smartapp:core","com.alibaba.ailabs.genie.smartapp:business"]
-    RuntimeData.package_save_path = "/Users/look/Downloads/mobileperf-turandot-shicun-2-13/results/com.alibaba.ailabs.genie.smartapp/2020_02_13_22_58_14"
+    RuntimeData.packages = ["com.kmxs.reader"]
+    RuntimeData.package_save_path = "/Users/admin/PycharmProject/mobileperf/results/com.kmxs.reader/2022_11_24_13_20_38"
     report = Report(RuntimeData.package_save_path,RuntimeData.packages)
     report.filter_file_names(RuntimeData.package_save_path)
